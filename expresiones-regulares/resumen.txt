@@ -1,0 +1,71 @@
+Expreciones regulares
+
+Las expresiones regulares son patrones de caracteres que te permiten ir seleccionando o descartando datos en un archivo de texto como por ejemplo csv, o en una línea o un input, según coincidan o nó con este patrón.
+
+Prácticamente todos los lenguajes de programación tienen librerías o módulos para manejar expresiones regulares.
+
+Las expresiones regulares pueden ser muy complejas pero no son nada difíciles de entender.  
+
+:::Aplicaciones de las expresiones regulares::::
+
+En pocas palabras se usan para buscar 
+
+//__________________________________________
+::::Lenguaje de expresiones regulares::::::
+-------------------------------------------//
+
+Pagina para probar las expreciones regulares https://regex101.com/ 
+
+otra pagina para mira las expreciones https://www.debuggex.com/
+
+ 
+.  En expreciones regulares significa caracter puede ser cualquier caracter
+
+example . + espacio buscara los caracteres que tengan un espacio al final
+
+
+---- Clases predefinidas -----
+
+\d se usa para buscar digitos del 0 al 9
+\D busca todo lo que no sea numeros 
+\w busca todo lo que sea parte de una palabra
+\W busca todos los caracteres que no sean una palabra ejemplo . / 
+\s encuentra todos los espacios y saltos de linea
+\S busca todas las palabras que tengan saltos de lineas
+
+---- 0 ----
+
+----- para crear clases usamos []
+
+[0-9] busca los numeros del 0 al 9 estos valores se pueden cambiar example [1-3] esto dice busca los numeros del 1 al 3
+[a-zA-Z] busca las letras minusculas de la a la z y tambien las mayusculas
+[a-z/.] busca de la a ala z y tambien puntos 
+\ este nos permite buscar caracteres especificos para sacar alt Gr + ? 
+
+* greedy - todos   // cero o mas veces
++ uno o más // una o mas veces
+? cero o uno  // cero o solo una vez
+Estos se pueden usar en una clase o con los [] o caracter especifico exmaple \d?s+[a-c]* 
+
+{numero inicial, limite} contador esto lo que nos permite es decir quiero que busques x cosa esta cantidad de veces example /d/d/d seria igual a /d{3,3} en algunos lenguajes se puede solo poner asi /d{3} si lo escribes así /d{3,} que busque sin el limite puede ser en este caso 3 o 1000
+
+? este tambien puede servir como delimitador example .+?, buscame todos los caracteres que tengan uno o more seguidos de una coma pero medas match mas pequeño  
+
+^ sirve para negar debe estar dentro de una clase example [^0-9] busca caracteres que no contengan numeros para sacar usas el alf 94 
+
+\t — Representa un tabulador.
+\r — Representa el “retorno de carro” o “regreso al inicio” o sea el lugar en que la línea vuelve a iniciar.
+\n — Representa la “nueva línea” el carácter por medio del cual una línea da inicio. Es necesario recordar que en Windows es necesaria una combinación de \r\n para comenzar una nueva línea, mientras que en Unix solamente se usa \n y en Mac_OS clásico se usa solamente \r.
+\a — Representa una “campana” o “beep” que se produce al imprimir este carácter.
+\e — Representa la tecla “Esc” o “Escape”
+\f — Representa un salto de página
+\v — Representa un tabulador vertical
+\x — Se utiliza para representar caracteres ASCII o ANSI si conoce su código. De esta forma, si se busca el símbolo de derechos de autor y la fuente en la que se busca utiliza el conjunto de caracteres Latin-1 es posible encontrarlo utilizando “\xA9”.
+\u — Se utiliza para representar caracteres Unicode si se conoce su código. “\u00A2” representa el símbolo de centavos. No todos los motores de Expresiones Regulares soportan Unicode. El .Net Framework lo hace, pero el EditPad Pro no, por ejemplo.
+\D — Representa cualquier carácter que no sea un dígito del 0 al 9.
+\W — Representa cualquier carácter no alfanumérico.
+\S — Representa cualquier carácter que no sea un espacio en blanco.
+\A — Representa el inicio de la cadena. No un carácter sino una posición.
+\Z — Representa el final de la cadena. No un carácter sino una posición.
+\b — Marca la posición de una palabra limitada por espacios en blanco, puntuación o el inicio/final de una cadena.
+\B — Marca la posición entre dos caracteres alfanuméricos o dos no-alfanuméricos.
