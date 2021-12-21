@@ -26,3 +26,36 @@ dominio.com
 [LOG ENTRY] [LOG] [user:@beco] Clicked here
 [LOG ENTRY] [LOG] [user:@beco] Rated the app
 [LOG ENTRY] [LOG] [user:@beco] Logged out
+
+555658
+56-58-11
+56.58.11
+56.78-98
+65 09 87
+76y87r98
++521565811
+
+esto.es_un.mail@mail.com
+esto.es_un.mail+complejo@mail.com
+dominio.com
+rodrigo.jimenez@yahoo.com.mx
+ruben@starbucks.com
+esto_no$es_email@dominio.com
+no_se_de_internet3@hotmail.com
+
+
+repetir video https://platzi.com/clases/1301-expresiones-regulares/11858-logs/
+
+Examples de expreciones regulares 
+
+Busca en el archivo lo siguiente:
+
+-- ^\+?\d+[#pe]?\d*$ -- Una linea que puede o no empezar con mas y seguido tiene uno o varios numeros y estas pueden estar separadas por #, p o e y estas contienen seguido uno o varios numeros
+
+-- ^\+?\d{2,3}[^\da-z]?\d{2,3}[^\da-z]?\d{2,3}[#pe]?\d*$ -- Puede enpezar con + tiene dos o tres numeros, separados por cualquier cosa que no se alfanumerica y esto haslo dos veces estas pueden estar separadas por #, p o e y estas contienen seguido uno o varios numeros  
+
+-- https?:\/\/[\w\-\.]+\.\w{2,6}\/?\S* -- debe tener http y puede o no tener s tiene : //, tiene palabras - y . puede ser uno o mas tiene . tiene dos o 6 carecteres puede tener un / y no puede tener espacios y si hay mas caracteres tomalos " Esta exprecion se puede usar para buscar urls " 
+
+--  [\w\._]{5,30}\+?[\w]{0,10}@[\w\.\-]{3,}\.\w{2,5} -- Es para buscar emails 
+
+

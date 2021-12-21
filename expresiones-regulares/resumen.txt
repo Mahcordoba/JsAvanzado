@@ -69,3 +69,6 @@ Estos se pueden usar en una clase o con los [] o caracter especifico exmaple \d?
 \Z — Representa el final de la cadena. No un carácter sino una posición.
 \b — Marca la posición de una palabra limitada por espacios en blanco, puntuación o el inicio/final de una cadena.
 \B — Marca la posición entre dos caracteres alfanuméricos o dos no-alfanuméricos.
+
+el ^ se utiliza para indicar el principio de línea
+el $ se utiliza para indicar final de línea y eso debe quedar así para que funcione ^ ------------- $ en el espacio se escribe lo que se quiere buscar example ^\d$ esto siginifica busca en el siguiente archivo un liniea que empieze en un digito y termine en un digito
