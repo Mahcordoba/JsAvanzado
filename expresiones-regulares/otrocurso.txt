@@ -1,0 +1,7 @@
+carlos_@hotmail.com
+alejandro@outlook.com
+
+hika.losas
+-- ^\w+@.*$ -- para buscar correos en una lista
+-- ^.+@.*$ -- para buscar correos pero ojo este puede cojer espacios
+

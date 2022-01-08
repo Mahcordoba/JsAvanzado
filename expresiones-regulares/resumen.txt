@@ -72,3 +72,6 @@ Estos se pueden usar en una clase o con los [] o caracter especifico exmaple \d?
 
 el ^ se utiliza para indicar el principio de línea
 el $ se utiliza para indicar final de línea y eso debe quedar así para que funcione ^ ------------- $ en el espacio se escribe lo que se quiere buscar example ^\d$ esto siginifica busca en el siguiente archivo un liniea que empieze en un digito y termine en un digito
+
+dentro de los [] no hay necesidad de escapar el punto
+escapar es poner \ esto ante el caracter que se quiere buscar pero pertenece a las expreciones sregulares.

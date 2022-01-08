@@ -43,6 +43,16 @@ ruben@starbucks.com
 esto_no$es_email@dominio.com
 no_se_de_internet3@hotmail.com
 
+-99.205645,19.429707,2275.10
+-99.205633, 19.429707,2275.12
+-99.205335,19.429707,2275.45
+-99.205777,19.429877,2275.33
+
+cordenadas 2
+
+-99 12' 34.08"W, 19 34' 56.98"N
+-299 12' 34.08"E, 19 34' 56.98"S
+
 
 repetir video https://platzi.com/clases/1301-expresiones-regulares/11858-logs/
 
@@ -58,4 +68,15 @@ Busca en el archivo lo siguiente:
 
 --  [\w\._]{5,30}\+?[\w]{0,10}@[\w\.\-]{3,}\.\w{2,5} -- Es para buscar emails 
 
+-------------- longitudes ------------
+-- -?\d{1,3}\.\d{1,6},\s?-?\d{1,3}\.\d{1,6},*$ como funciona en visual estudio para buscar cordenadas ---
+-- \-?\d{1,3}\.\d{1,6},\s?\-?\d{1,3}\.\d{1,6}.*$ -- la de la clases
+ 
+cordeanas 2
+-- ^-?\d{1,3}\s\d{1,2}' \d{1,2}\.\d{2,2}"[WE],\s?-?\d{1,3}\s\d{1,2}' \d{1,2}\.\d{2,2}"[NS]$ -- para buscar coordenadas con grados y minutos y w,e,n,s
+
+----Busqueda y remplazo -----------
+Se usa el archivo movies.dat
+Repetir video 19 para los ()
+-- ^\d+::([\w\s:,\(\)'\.-\/]+)\s\((\d{4,})\)::.*$ quitar el \ del - ya que en visual estudio no funciona esta expreción
 

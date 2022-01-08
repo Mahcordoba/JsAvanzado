@@ -1,0 +1,18 @@
+Maria Raquel Sanchez 
+Luz Maria Cordoba Sanchez
+Marco Antonio Herrera Montaño
+Luiz Arturo Mora Rojas
+Jose Miguel Rojas Carbajal
+Carmen Rojas Pinilla
+Yaquelin Paola Murcia Zuniga
+Marta Lucia Sanchez Carbajal
+Vicent Quesada
+Camila Naima Cifuentes Rojas
+Sandra Patricia Rodriguez Martinez
+Alba Patricia Garcia Perez
+Camila Lopez Gonzalez
+Ana Maria Carbajal Mora
+Jose Luiz Garcia Garcia
+
+
+solución del reto ([A-Z][a-zñ]{2,}\s?){2,}
