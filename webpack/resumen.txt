@@ -1,0 +1,69 @@
+Webpack
+
+    Webpack es un paquete de módulos estáticos para aplicaciones de JS modernas
+
+    Loader Te permite hacer un bundle de cualquier recurso estático más allá de JavaScript
+
+    Plugins Extienden recursos para añadir configuraciones y particularidades de recursos externos
+
+
+Webpack construye un gráfico de dependencias que mapea cada módulo para con verlo en uno o más módulos
+
+Desde webpack 4 ya no dependemos de tener un archivo de configuración, pero si debemos tener un punto de entrada
+
+Tambien tendremos que tener un punto de salida
+        En este punto se creará nuestro proyecto una vez esté preparado
+        Normalmente es la carpeta dist ⇒ Distribution
+
+Tambien contamos con diferentes modos
+        Modo de desarrollo
+        Modo de producción
+        Modos de performance
+            Donde tu añades
+                Configuraciones de minificación
+                Donde se va enviar
+                Carpeta de destino
+        Modos de desarrollo local
+            Donde puedes
+                Crear puertos específicos para tu proyecto
+                Ver cambios en tiempo real
+
+Dispone de loader y plugins permitiéndonos preparar particularidades de nuestro proyecto
+
+//......... Babel Loader para JavaScript
+
+
+    Babel te permite hacer que tu código JavaScript sea compatible con todos los navegadores
+    Debes agregar a tu proyecto las siguientes dependencias
+
+    Como instalar 
+
+    npm install babel-loader @babel/core @babel/preset-env @babel/plugin-transform-runtime -D
+
+¿Qué Rayos es Babel?
+Es un transcompilador de JavaScript que agarra el código ECMAScript 2015 en adelante y lo transforma en una versión que todos los navegadores anteriores lo puedan usar
+En la pagina de Babel pueden ingresar código moderno se lo transpira a código viejo en tiempo real
+
+babel-loader nos permite usar babel con webpack
+    @babel/core es babel en general
+    @babel/preset-env trae y te permite usar las ultimas características de JavaScript
+    @babel/plugin-transform-runtime te permite trabajar con todo el tema de asincronismo como ser async y await
+    Debes crear el archivo de configuración de babel el cual tiene como nombre .babelrc
+
+    Mirar el .babelrc de este ejemplo practico
+
+recuerda los archivos que empiezan con . son invisibles para el usuario final pero estos son de configuración para nuestra app
+
+:::::::::::::::::::::::::::::::::::::::::::
+webpack.config.js 
+::::::::::::::::::::::::::::::::::::::::::::
+
+Archivo de configuración del webpack config este debe ir en la carpeta principal del proyecto 
+
+
+::::::::::::::::::::::::::::::::::::::::::::
+Investigar mas
+:::::::::::::::::::::::::::::::::::::::::::
+-Babel 
+-Babel loader
+

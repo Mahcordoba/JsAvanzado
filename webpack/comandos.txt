@@ -1,0 +1,12 @@
+para intalar webpack npm install webpack -D // Para que sea una dependencia de desarrollo
+
+para poder usar comandos de webpack npm install webpack-cli -D
+
+npx webpack Este comando identifica todos nuestros archivos js y prepara el proyecto
+
+npx webpack --mode development   
+npx webpack --mode production // Estos nos permiten compilar el codigo para que sea optimizado por webpack
+
+Cuando se crea un archivo de webpack.config
+hay que agregar un nuevo flap a los comandos de --mode development o production 
+--config webpack.config.js esto la primera ves despues no hay necesidad de escribir el flap 
